@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Moon</title>
+</head>
+<body>
+    <div class="container">
+        <button class="btn" id="button">Show</button>
+        <img src="./moon.jpg" alt="Moon picture" class="moon" id="moon">
+    </div>
+    <script>
+        var button = document.getElementById('button');
+        var moonImg = document.getElementById('moon');
+        button.addEventListener('click', function() {
+            toggleMoonImgDisplay();
+            toggleButtonText();
+        });
+
+        function toggleMoonImgDisplay() {
+            moonImg.style.display = moonImg.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleButtonText() {
+            button.innerText = button.innerText === 'Hide' ? 'Show' : 'Hide';
+        }        
+    </script>
+</body>
+</html>

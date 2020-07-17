@@ -30,6 +30,10 @@ body {
     cursor: pointer;
 }
 
+.btn:focus {
+    outline: none;
+}
+
 .moon {
     margin-top: 50px;
     width: 560px;
